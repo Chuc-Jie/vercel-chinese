@@ -172,10 +172,6 @@ A: 请在 [GitHub Issues](https://github.com/Chuc-Jie/vercel-chinese/issues) 提
 
 本项目基于 GPL-3.0 协议开源。
 
-原始代码版权归 [liyixin21](https://github.com/liyixin21) 所有。
-
-二次开发部分版权归 [友野YouyEr](https://github.com/Chuc-Jie) 所有。
-
 ## 🙏 致谢
 
 - [liyixin21](https://github.com/liyixin21) - 原始脚本作者
