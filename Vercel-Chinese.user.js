@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Vercel 汉化
 // @namespace    https://github.com/Chuc-Jie/vercel-chinese
-// @version      0.2.2
+// @version      0.3.0
 // @description  汉化 Vercel 界面
 // @author       友野YouyEr（原作者：liyixin21）
 // @icon         https://assets.vercel.com/image/upload/v1607554385/repositories/vercel/logo.png
@@ -70,7 +70,7 @@
         ['Commit', '提交'],
         ['Branch', '分支'],
         ['Pull Request', '拉取请求'],
-        ['Repository', '仓库'],
+        ['Repository', '代码仓库'],
         ['Connect Git Repository', '连接Git仓库'],
         ['GitHub', 'GitHub'],
         ['GitLab', 'GitLab'],
@@ -85,7 +85,6 @@
         // 项目设置
         ['Project Settings', '项目设置'],
         ['General', '常规'],
-        ['Domains', '域名'],
         ['Environment Variables', '环境变量'],
         ['Integration', '集成'],
         ['Integrations', '集成服务'],
@@ -148,10 +147,7 @@
         ['New Project', '新项目'],
         ['Import Git Repository', '导入 Git 仓库'],
         ['Import', '导入'],
-        ['Clone', '克隆'],
-        ['Repository', '仓库'],
         ['Template', '模板'],
-        ['Framework', '框架'],
         ['Templates', '模板'],
         ['Project Name', '项目名称'],
         ['Create New Project', '创建新项目'],
@@ -177,10 +173,9 @@
         ['Sort', '排序'],
         ['Refresh', '刷新'],
         ['View', '查看'],
-        ['Edit', '编辑'],
-        ['Delete', '删除'],
         ['Manage', '管理'],
-        // 2026-03-22 新增
+        
+        // 2026-03-22 新增词汇
         ['All projects', '所有项目'],
         ['Alerts', '警报'],
         ['AI Gateway', '人工智能门户'],
@@ -188,7 +183,6 @@
         ['Agent', '代理'],
         ['Tasks', '任务'],
         ['Product', '产品'],
-        ['Usage', '使用'],
         ['Networking', '网络'],
         ['Fast Data Transfer', '快速数据传输'],
         ['Regions', '区域'],
@@ -227,7 +221,6 @@
         ['Forward Logs, Traces, Speed Insights, and Analytics to third-party providers or your own custom endpoints.', '将日志、追踪、速度洞察和分析数据转发至第三方提供商或您自己的自定义端点。'],
         ['Get started with Drains', '开始使用日志转发'],
         ['Upgrade to Pro to create your first Drain.', '升级至专业版以创建您的第一个日志转发。'],
-        ['Learn More', '了解更多'],
         ['Webhooks', 'Webhook'],
         ['Add Webhooks', '添加 Webhook'],
         ['This feature is available on the Pro plan.', '此功能在专业版计划中可用。'],
@@ -254,38 +247,316 @@
         ['Marketplace Providers', '市场提供商'],
         ['Create feature flags and experiments', '创建功能标志和实验'],
         ['Set up a provider to start creating feature flags and experiments.', '设置提供商以开始创建功能标志和实验。'],
-        ['Create', '创建'],
+        ['Projects', '项目'],
+        ['Project', '项目'],
+        ['Activity', '活动'],
+        ['Recent Activity', '最近活动'],
+        ['All Projects', '所有项目'],
+        ['No projects found', '未找到项目'],
+        ['Search projects...', '搜索项目...'],
+        ['Create a New Project', '创建新项目'],
+        ['Your Projects', '您的项目'],
+        ['Last updated', '最后更新'],
+        ['Last deployed', '最后部署'],
+        
+        // 部署详情
+        ['Deployment Details', '部署详情'],
+        ['Source', '源码'],
+        ['Runtime', '运行时'],
+        ['Build Logs', '构建日志'],
+        ['Function Logs', '函数日志'],
+        ['Edge Function Logs', '边缘函数日志'],
+        ['View Function Logs', '查看函数日志'],
+        ['View Edge Function Logs', '查看边缘函数日志'],
+        ['Runtime Logs', '运行时日志'],
+        ['View Runtime Logs', '查看运行时日志'],
+        ['API Endpoints', 'API端点'],
+        ['Serverless Functions', '无服务器函数'],
+        ['Edge Functions', '边缘函数'],
+        ['Edge Middleware', '边缘中间件'],
+        ['Cache', '缓存'],
+        
+        // 环境变量
+        ['Add Environment Variable', '添加环境变量'],
+        ['Name', '名称'],
+        ['Value', '值'],
+        ['Environments', '环境'],
+        ['Production Only', '仅生产环境'],
+        ['All Environments', '所有环境'],
+        ['Preview Only', '仅预览环境'],
+        ['Development Only', '仅开发环境'],
+        ['Environment Variable', '环境变量'],
+        ['Plain Text', '纯文本'],
+        ['Secret', '密钥'],
+        ['System Environment Variables', '系统环境变量'],
+        ['User Environment Variables', '用户环境变量'],
+        
+        // 域名设置
+        ['Add Domain', '添加域名'],
+        ['Domain Name', '域名名称'],
+        ['Primary Domain', '主域名'],
+        ['Set as Primary Domain', '设为主域名'],
+        ['Verify Domain', '验证域名'],
+        ['DNS Settings', 'DNS设置'],
+        ['Invalid Domain', '无效域名'],
+        ['Pending Verification', '等待验证'],
+        ['SSL Certificate', 'SSL证书'],
+        ['Auto-renewed', '自动续期'],
+        ['Custom Domains', '自定义域名'],
+        ['Generated Domains', '生成的域名'],
+        ['Domain Configuration', '域名配置'],
+        ['Redirect', '重定向'],
+        ['Redirects', '重定向'],
+        ['Rewrites', '重写'],
+        ['Headers', '标头'],
+        ['Add Redirect', '添加重定向'],
+        ['Add Rewrite', '添加重写'],
+        ['Add Header', '添加标头'],
+        ['Source Path', '源路径'],
+        ['Destination Path', '目标路径'],
+        ['Status Code', '状态码'],
+        
+        // 计划和付费
+        ['Hobby', '业余'],
+        ['Pro', '专业版'],
+        ['Enterprise', '企业版'],
+        ['Free', '免费'],
+        ['Usage Metrics', '使用指标'],
+        ['Bandwidth', '带宽'],
+        ['Build Minutes', '构建分钟'],
+        ['Upgrade Plan', '升级计划'],
+        ['Billing Period', '账单周期'],
+        ['Payment Method', '支付方式'],
+        ['Billing Email', '账单邮箱'],
+        ['Invoice', '发票'],
+        ['Invoices', '发票'],
+        ['Current Plan', '当前计划'],
+        ['Team Member', '团队成员'],
+        ['Concurrency', '并发'],
+        ['Execution Timeout', '执行超时'],
+        ['Included', '已包含'],
+        ['Analytics Retention', '分析数据保留'],
+        ['SFTP Access', 'SFTP访问'],
+        
+        // 账户和安全
+        ['Account', '账户'],
+        ['Account Settings', '账户设置'],
+        ['Profile', '个人资料'],
+        ['Username', '用户名'],
+        ['Email', '电子邮件'],
+        ['Password', '密码'],
+        ['Change Password', '修改密码'],
+        ['Current Password', '当前密码'],
+        ['New Password', '新密码'],
+        ['Confirm Password', '确认密码'],
+        ['Two-Factor Authentication', '双因素认证'],
+        ['Security', '安全'],
+        ['API Tokens', 'API令牌'],
+        ['Personal Account', '个人账户'],
+        ['Team Account', '团队账户'],
+        ['Create Token', '创建令牌'],
+        ['Token Name', '令牌名称'],
+        ['Token Permissions', '令牌权限'],
+        ['Read-only', '只读'],
+        ['Full Access', '完全访问'],
+        
+        // 框架和技术术语
+        ['Next.js', 'Next.js'],
+        ['React', 'React'],
+        ['Vue', 'Vue'],
+        ['Angular', 'Angular'],
+        ['Nuxt', 'Nuxt'],
+        ['Static Site', '静态站点'],
+        ['Node.js', 'Node.js'],
+        ['Gatsby', 'Gatsby'],
+        ['Svelte', 'Svelte'],
+        ['Astro', 'Astro'],
+        ['WordPress', 'WordPress'],
+        ['Hugo', 'Hugo'],
+        ['Ruby on Rails', 'Ruby on Rails'],
+        ['Python', 'Python'],
+        ['Docker', 'Docker'],
+        ['Static Site Generator', '静态站点生成器'],
+        ['Server-Side Rendering', '服务器端渲染'],
+        ['Static Generation', '静态生成'],
+        ['Incremental Static Regeneration', '增量静态再生'],
+        ['API Routes', 'API路由'],
+        ['Serverless', '无服务器'],
+        ['Monorepo', '单体仓库'],
+        
+        // 其他常用
+        ['Dark Mode', '暗色模式'],
+        ['Light Mode', '亮色模式'],
+        ['System', '跟随系统'],
+        ['Create Team', '创建团队'],
+        ['Switch Team', '切换团队'],
+        ['Connected Services', '关联服务'],
+        ['Get Started', '开始使用'],
+        ['Support', '支持'],
+        ['Changelog', '更新日志'],
+        
+        // Vercel特有的功能和概念
+        ['Speed Insights', '速度洞察'],
+        ['Web Vitals', 'Web指标'],
+        ['Core Web Vitals', '核心Web指标'],
+        ['First Contentful Paint', '首次内容绘制'],
+        ['Largest Contentful Paint', '最大内容绘制'],
+        ['First Input Delay', '首次输入延迟'],
+        ['Cumulative Layout Shift', '累积布局偏移'],
+        ['Time to First Byte', '首字节时间'],
+        ['Interaction to Next Paint', '交互到下一次绘制'],
+        ['Real User Monitoring', '真实用户监控'],
+        ['Device', '设备'],
+        ['Mobile', '移动设备'],
+        ['Desktop', '桌面设备'],
+        ['Browser', '浏览器'],
+        ['Country', '国家'],
+        ['Region', '地区'],
+        ['Edge Network', '边缘网络'],
+        ['CDN', 'CDN'],
+        ['Caching', '缓存'],
+        ['Hosting', '托管'],
+        ['Logs', '日志'],
+        
+        // 更多专业术语
+        ['Continuous Integration', '持续集成'],
+        ['Continuous Deployment', '持续部署'],
+        ['CI/CD', 'CI/CD'],
+        ['Infrastructure', '基础设施'],
+        ['Configuration', '配置'],
+        ['Monitoring', '监控'],
+        ['Logging', '日志记录'],
+        ['Performance', '性能'],
+        ['Scaling', '扩展'],
+        ['Autoscaling', '自动扩展'],
+        ['Load Balancing', '负载均衡'],
+        ['High Availability', '高可用性'],
+        ['Disaster Recovery', '灾难恢复'],
+        ['Backup', '备份'],
+        ['Restore', '恢复'],
+        ['Migration', '迁移'],
+        ['Rollback', '回滚'],
+        ['Versioning', '版本控制'],
+        
+        // 词条
+        ['Deployment Configuration', '部署配置'],
+        ['Fluid Compute', '流畅计算'],
+        ['Deployment Protection', '部署保护'],
+        ['Slow Protection', '慢保护'],
+        ['To update your Production Deployment, push to the', '要更新您的生产部署，请推送到'],
+        ['branch.', '分支。'],
+        ['Track visitors and page views', '跟踪访问者和页面浏览量'],
+        ['Edge Requests', '边缘请求'],
+        ['Function Invocations', '函数调用'],
+        ['错误 Rate', '错误率'],
+        ['Error Rate', '错误率'],
+        ['requests','请求'],
+        ['denied', '被拒绝'],
+        ['challenged', '被质询'],
+        ['Firewall', '防火墙'],
+        ['Active Branches', '活跃分支'],
+        ['No Preview Deployments', '没有预览部署'],
+        ['No 预览部署', '没有预览部署'],
+        ['Commit using our Git connections.', '使用我们的Git连接提交。'],
+        ['All systems normal', '所有系统正常'],
+        ['Instant Rollback', '即时回滚'],
+        ['Observability', '可观测性'],
+        ['Storage', '存储'],
+        ['hours', '小时'],
+        ['minutes', '分钟'],
+        ['seconds', '秒'],
+        ['days', '天'],
+        ['weeks', '周'],
+        ['months', '月'],
+        ['years', '年'],
+        ['排序 由 activity', '按活动排序'],
+        ['排序 由 name', '按名称排序'],
+        ['搜索 Repositories and 项目...', '搜索存储库和项目...'],
+        ['Find Team...', '搜索团队...'],
+        ['Find Project...', '搜索项目...'],
+        ['Recent Previews', '近期预览'],
+        ['What do you need?', '您需要什么？'],
+        ['Upgrade to 专业版', '升级到专业版'],
+        ['Theme', '主题'],
+        ['Command Menu', '命令菜单'],
+        ['首页 Page', '主页'],
+        ['创建 new 团队', '创建新团队'],
+        ['Change Theme...', '更改主题...'],
+        ['复制 Current URL', '复制当前URL'],
+        ['Navigation', '导航'],
+        ['Go to', '前往'],
+        ['Quick 复制', '快速复制'],
+        ['Scope 设置...', '范围设置...'],
+        ['Switch Scope...', '切换范围...'],
+        ['搜索 文档...', '搜索文档...'],
+        ['联系我们 支持', '联系支持'],
+        ['Send 反馈...', '发送反馈...'],
+        ['Developer Tools', '开发者工具'],
+        ['搜索 开发者工具', '搜索开发者工具'],
+        
+        // 精确匹配长句
+        ['Firewall is active', '防火墙已激活'],
+        ['应用', '应用'],
+        ['ago', '前'],
+        ['by', '由'],
+        ['Home', '首页'],
+        ['Contact', '联系我们'],
+        ['Legal', '法律条款'],
+        ['Guides', '指南'],
+        ['hidden files', '隐藏文件'],
+        
+        // 工具栏相关
+        ['Visit with Toolbar', '使用工具栏访问'],
+        ['Scan this QR code to open with the toolbar on a different device:', '扫描此二维码在其他设备上使用工具栏打开：'],
+        ['Get easy access to the toolbar on your production deployments:', '在您的生产部署中轻松访问工具栏：'],
+        ['Install Extension', '安装扩展'],
+        ['Get detailed performance metrics', '获取详细性能指标'],
+        ['enabling Speed Insights', '启用速度洞察'],
+        ['Function CPU', '函数CPU'],
+        ['Basic', '基础版'],
+        ['vCPU', '虚拟CPU'],
+        ['GB Memory', 'GB内存'],
+        ['Standard Protection', '标准保护'],
+        ['Skew Protection', '偏差保护'],
+        ['Disabled', '已禁用'],
+        ['Store', '存储'],
+        ['Domain', '域名'],
     ]);
 
-    // ---------- 新增：排序键列表，实现长短语优先 ----------
-    let sortedKeys = []; // 存储按长度降序排列的键
+    // ---------- 排序键列表和正则表达式预编译 ----------
+    let sortedKeys = [];
+    let compiledRegexes = new Map();
 
     function updateSortedKeys() {
         sortedKeys = Array.from(i18n.keys()).sort((a, b) => b.length - a.length);
+        // 预编译正则表达式，提升性能
+        compiledRegexes.clear();
+        for (const key of sortedKeys) {
+            compiledRegexes.set(key, new RegExp(escapeRegExp(key), 'g'));
+        }
     }
+    
     // 初始化排序
     updateSortedKeys();
 
-    // 定时器变量（声明在函数作用域，避免隐式全局）
+    // 定时器变量
     let fullTranslationTimer = null;
     let translationTimer = null;
     let specialTranslationTimer = null;
 
-    // 初始页面文本替换，增加延迟时间确保DOM完全加载
+    // 初始页面文本替换
     setTimeout(() => {
         forceApplyAllTranslations();
-    }, 800); // 延迟800ms，确保页面已经加载完成
+    }, 800);
     
     // 监听 DOM 变更
     const bodyObserver = new MutationObserver(mutations => {
-        // 使用防抖动技术，减少重复翻译次数
         clearTimeout(translationTimer);
         translationTimer = setTimeout(() => {
             processMutations(mutations);
         }, 100);
     });
 
-    // 开始监听页面变化
     bodyObserver.observe(document.body, { 
         childList: true, 
         subtree: true,
@@ -294,7 +565,7 @@
         attributeFilter: ['title', 'placeholder', 'aria-label']
     });
 
-    // 页面卸载时断开观察器（可选，提升脚本健壮性）
+    // 页面卸载时断开观察器
     window.addEventListener('beforeunload', () => {
         bodyObserver.disconnect();
         if (specialObservers && specialObservers.length) {
@@ -302,26 +573,22 @@
         }
     });
 
-    // 存储特殊元素观察器，以便清理
     let specialObservers = [];
 
     // 是否应该忽略节点
     function shouldIgnoreNode(node) {
         if (!node || node.nodeType !== 1) return false;
         
-        // 检查是否为应该忽略的元素类型
         if (ignoredSelectors.some(selector => node.matches && node.matches(selector))) {
             return true;
         }
         
-        // 检查是否包含应该忽略的类名
         if (node.className && typeof node.className === 'string') {
             if (ignoredClasses.some(cls => node.className.includes(cls))) {
                 return true;
             }
         }
         
-        // 检查父元素
         let parent = node.parentNode;
         while (parent && parent !== document.body) {
             if (parent.nodeType === 1) {
@@ -340,11 +607,15 @@
         return false;
     }
 
-    // 翻译单个文本节点（使用排序后的键列表）
+    // 增强的转义函数
+    function escapeRegExp(string) {
+        return string.replace(/[.*+?^${}()|[\]\\\-/]/g, '\\$&');
+    }
+
+    // 翻译单个文本节点（使用预编译的正则表达式）
     function translateTextNode(node) {
         if (!node || !node.nodeValue || !node.nodeValue.trim()) return;
         
-        // 检查是否应该忽略该节点的父元素
         if (node.parentNode && shouldIgnoreNode(node.parentNode)) {
             return;
         }
@@ -352,12 +623,10 @@
         let text = node.nodeValue;
         let translated = false;
 
-        // 按长度从长到短依次匹配
         for (const key of sortedKeys) {
-            const value = i18n.get(key);
-            // 使用正则全局替换，注意转义
-            const regex = new RegExp(escapeRegExp(key), 'g');
-            if (regex.test(text)) {
+            const regex = compiledRegexes.get(key);
+            if (regex && regex.test(text)) {
+                const value = i18n.get(key);
                 text = text.replace(regex, value);
                 translated = true;
             }
@@ -368,12 +637,7 @@
         }
     }
 
-    // 辅助函数：转义正则表达式特殊字符
-    function escapeRegExp(string) {
-        return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    }
-
-    // 翻译元素属性（使用排序后的键列表）
+    // 翻译元素属性（使用预编译的正则表达式）
     function translateAttribute(element, attrName) {
         if (!element || !element.hasAttribute(attrName)) return;
         
@@ -383,11 +647,10 @@
         let newValue = attrValue;
         let translated = false;
 
-        // 按长度从长到短依次匹配
         for (const key of sortedKeys) {
-            const value = i18n.get(key);
-            const regex = new RegExp(escapeRegExp(key), 'g');
-            if (regex.test(newValue)) {
+            const regex = compiledRegexes.get(key);
+            if (regex && regex.test(newValue)) {
+                const value = i18n.get(key);
                 newValue = newValue.replace(regex, value);
                 translated = true;
             }
@@ -402,15 +665,12 @@
     function replaceText(rootNode) {
         if (!rootNode || shouldIgnoreNode(rootNode)) return;
         
-        // 处理所有文本节点
         const textWalker = document.createTreeWalker(
             rootNode,
             NodeFilter.SHOW_TEXT,
             {
                 acceptNode: function(node) {
-                    // 过滤掉空文本节点
                     if (!node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
-                    // 过滤掉应该被忽略的元素内的文本
                     if (node.parentNode && shouldIgnoreNode(node.parentNode)) {
                         return NodeFilter.FILTER_REJECT;
                     }
@@ -425,7 +685,6 @@
             translateTextNode(textNode);
         }
         
-        // 处理元素属性
         const elementWalker = document.createTreeWalker(
             rootNode,
             NodeFilter.SHOW_ELEMENT,
@@ -440,22 +699,18 @@
         
         let element;
         while ((element = elementWalker.nextNode()) !== null) {
-            // 翻译title属性
             if (element.hasAttribute('title')) {
                 translateAttribute(element, 'title');
             }
             
-            // 翻译placeholder属性
             if (element.hasAttribute('placeholder')) {
                 translateAttribute(element, 'placeholder');
             }
             
-            // 翻译aria-label属性
             if (element.hasAttribute('aria-label')) {
                 translateAttribute(element, 'aria-label');
             }
             
-            // 翻译按钮和输入框的value
             if ((element.tagName === 'INPUT' || element.tagName === 'BUTTON') && 
                 element.hasAttribute('value') && 
                 !element.getAttribute('type') === 'password') {
@@ -464,346 +719,31 @@
         }
     }
 
-    // 添加更多 Vercel 特定的词汇翻译
-    addVocabulary();
-
-    // 添加更多词汇的函数
-    function addVocabulary() {
-        // 项目和仪表盘
-        i18n.set('Projects', '项目');
-        i18n.set('Project', '项目');
-        i18n.set('Activity', '活动');
-        i18n.set('Recent Activity', '最近活动');
-        i18n.set('All Projects', '所有项目');
-        i18n.set('No projects found', '未找到项目');
-        i18n.set('Search projects...', '搜索项目...');
-        i18n.set('Create a New Project', '创建新项目');
-        i18n.set('Your Projects', '您的项目');
-        i18n.set('Last updated', '最后更新');
-        i18n.set('Last deployed', '最后部署');
-        
-        // 部署详情
-        i18n.set('Deployment Details', '部署详情');
-        i18n.set('Source', '源码');
-        i18n.set('Branch', '分支');
-        i18n.set('Commit', '提交');
-        i18n.set('Runtime', '运行时');
-        i18n.set('Build Logs', '构建日志');
-        i18n.set('Function Logs', '函数日志');
-        i18n.set('Edge Function Logs', '边缘函数日志');
-        i18n.set('View Function Logs', '查看函数日志');
-        i18n.set('View Edge Function Logs', '查看边缘函数日志');
-        i18n.set('Runtime Logs', '运行时日志');
-        i18n.set('View Runtime Logs', '查看运行时日志');
-        i18n.set('API Endpoints', 'API端点');
-        i18n.set('Serverless Functions', '无服务器函数');
-        i18n.set('Edge Functions', '边缘函数');
-        i18n.set('Edge Middleware', '边缘中间件');
-        i18n.set('Cache', '缓存');
-        
-        // 环境变量
-        i18n.set('Add Environment Variable', '添加环境变量');
-        i18n.set('Name', '名称');
-        i18n.set('Value', '值');
-        i18n.set('Environments', '环境');
-        i18n.set('Production Only', '仅生产环境');
-        i18n.set('All Environments', '所有环境');
-        i18n.set('Preview Only', '仅预览环境');
-        i18n.set('Development Only', '仅开发环境');
-        i18n.set('Environment Variable', '环境变量');
-        i18n.set('Plain Text', '纯文本');
-        i18n.set('Secret', '密钥');
-        i18n.set('System Environment Variables', '系统环境变量');
-        i18n.set('User Environment Variables', '用户环境变量');
-        
-        // 域名设置
-        i18n.set('Add Domain', '添加域名');
-        i18n.set('Domain Name', '域名名称');
-        i18n.set('Primary Domain', '主域名');
-        i18n.set('Set as Primary Domain', '设为主域名');
-        i18n.set('Verify Domain', '验证域名');
-        i18n.set('DNS Settings', 'DNS设置');
-        i18n.set('Invalid Domain', '无效域名');
-        i18n.set('Pending Verification', '等待验证');
-        i18n.set('SSL Certificate', 'SSL证书');
-        i18n.set('Auto-renewed', '自动续期');
-        i18n.set('Custom Domains', '自定义域名');
-        i18n.set('Generated Domains', '生成的域名');
-        i18n.set('Domain Configuration', '域名配置');
-        i18n.set('Redirect', '重定向');
-        i18n.set('Redirects', '重定向');
-        i18n.set('Rewrites', '重写');
-        i18n.set('Headers', '标头');
-        i18n.set('Add Redirect', '添加重定向');
-        i18n.set('Add Rewrite', '添加重写');
-        i18n.set('Add Header', '添加标头');
-        i18n.set('Source Path', '源路径');
-        i18n.set('Destination Path', '目标路径');
-        i18n.set('Status Code', '状态码');
-        
-        // 计划和付费
-        i18n.set('Hobby', '业余');
-        i18n.set('Pro', '专业版');
-        i18n.set('Enterprise', '企业版');
-        i18n.set('Free', '免费');
-        i18n.set('Usage Metrics', '使用指标');
-        i18n.set('Bandwidth', '带宽');
-        i18n.set('Build Minutes', '构建分钟');
-        i18n.set('Upgrade Plan', '升级计划');
-        i18n.set('Billing Period', '账单周期');
-        i18n.set('Payment Method', '支付方式');
-        i18n.set('Billing Email', '账单邮箱');
-        i18n.set('Invoice', '发票');
-        i18n.set('Invoices', '发票');
-        i18n.set('Current Plan', '当前计划');
-        i18n.set('Teams', '团队');
-        i18n.set('Team Member', '团队成员');
-        i18n.set('Concurrency', '并发');
-        i18n.set('Execution Timeout', '执行超时');
-        i18n.set('Included', '已包含');
-        i18n.set('Analytics Retention', '分析数据保留');
-        i18n.set('SFTP Access', 'SFTP访问');
-        
-        // 账户和安全
-        i18n.set('Account', '账户');
-        i18n.set('Account Settings', '账户设置');
-        i18n.set('Profile', '个人资料');
-        i18n.set('Username', '用户名');
-        i18n.set('Email', '电子邮件');
-        i18n.set('Password', '密码');
-        i18n.set('Change Password', '修改密码');
-        i18n.set('Current Password', '当前密码');
-        i18n.set('New Password', '新密码');
-        i18n.set('Confirm Password', '确认密码');
-        i18n.set('Two-Factor Authentication', '双因素认证');
-        i18n.set('Security', '安全');
-        i18n.set('API Tokens', 'API令牌');
-        i18n.set('Personal Account', '个人账户');
-        i18n.set('Team Account', '团队账户');
-        i18n.set('Create Token', '创建令牌');
-        i18n.set('Token Name', '令牌名称');
-        i18n.set('Token Permissions', '令牌权限');
-        i18n.set('Read-only', '只读');
-        i18n.set('Full Access', '完全访问');
-        
-        // 框架和技术术语
-        i18n.set('Next.js', 'Next.js');
-        i18n.set('React', 'React');
-        i18n.set('Vue', 'Vue');
-        i18n.set('Angular', 'Angular');
-        i18n.set('Nuxt', 'Nuxt');
-        i18n.set('Static Site', '静态站点');
-        i18n.set('Node.js', 'Node.js');
-        i18n.set('Gatsby', 'Gatsby');
-        i18n.set('Svelte', 'Svelte');
-        i18n.set('Astro', 'Astro');
-        i18n.set('WordPress', 'WordPress');
-        i18n.set('Hugo', 'Hugo');
-        i18n.set('Ruby on Rails', 'Ruby on Rails');
-        i18n.set('Python', 'Python');
-        i18n.set('Docker', 'Docker');
-        i18n.set('Static Site Generator', '静态站点生成器');
-        i18n.set('Server-Side Rendering', '服务器端渲染');
-        i18n.set('Static Generation', '静态生成');
-        i18n.set('Incremental Static Regeneration', '增量静态再生');
-        i18n.set('API Routes', 'API路由');
-        i18n.set('Serverless', '无服务器');
-        i18n.set('Monorepo', '单体仓库');
-        
-        // 其他常用
-        i18n.set('Dark Mode', '暗色模式');
-        i18n.set('Light Mode', '亮色模式');
-        i18n.set('System', '跟随系统');
-        i18n.set('Create Team', '创建团队');
-        i18n.set('Switch Team', '切换团队');
-        i18n.set('Connected Services', '关联服务');
-        i18n.set('Get Started', '开始使用');
-        i18n.set('Documentation', '文档');
-        i18n.set('Support', '支持');
-        i18n.set('Changelog', '更新日志');
-        
-        // Vercel特有的功能和概念
-        i18n.set('Speed Insights', '速度洞察');
-        i18n.set('Web Vitals', 'Web指标');
-        i18n.set('Core Web Vitals', '核心Web指标');
-        i18n.set('First Contentful Paint', '首次内容绘制');
-        i18n.set('Largest Contentful Paint', '最大内容绘制');
-        i18n.set('First Input Delay', '首次输入延迟');
-        i18n.set('Cumulative Layout Shift', '累积布局偏移');
-        i18n.set('Time to First Byte', '首字节时间');
-        i18n.set('Interaction to Next Paint', '交互到下一次绘制');
-        i18n.set('Analytics', '分析');
-        i18n.set('Real User Monitoring', '真实用户监控');
-        i18n.set('Device', '设备');
-        i18n.set('Mobile', '移动设备');
-        i18n.set('Desktop', '桌面设备');
-        i18n.set('Browser', '浏览器');
-        i18n.set('Country', '国家');
-        i18n.set('Region', '地区');
-        i18n.set('Edge Network', '边缘网络');
-        i18n.set('CDN', 'CDN');
-        i18n.set('Caching', '缓存');
-        i18n.set('Hosting', '托管');
-        i18n.set('Logs', '日志');
-        
-        // 更多专业术语
-        i18n.set('Continuous Integration', '持续集成');
-        i18n.set('Continuous Deployment', '持续部署');
-        i18n.set('CI/CD', 'CI/CD');
-        i18n.set('Infrastructure', '基础设施');
-        i18n.set('Configuration', '配置');
-        i18n.set('Monitoring', '监控');
-        i18n.set('Logging', '日志记录');
-        i18n.set('Performance', '性能');
-        i18n.set('Security', '安全');
-        i18n.set('Scaling', '扩展');
-        i18n.set('Autoscaling', '自动扩展');
-        i18n.set('Load Balancing', '负载均衡');
-        i18n.set('High Availability', '高可用性');
-        i18n.set('Disaster Recovery', '灾难恢复');
-        i18n.set('Backup', '备份');
-        i18n.set('Restore', '恢复');
-        i18n.set('Migration', '迁移');
-        i18n.set('Rollback', '回滚');
-        i18n.set('Versioning', '版本控制');
-        i18n.set('Changelog', '更新日志');
-        
-        // 词条
-        i18n.set('Deployment Configuration', '部署配置');
-        i18n.set('Fluid Compute', '流畅计算');
-        i18n.set('Deployment Protection', '部署保护');
-        i18n.set('Slow Protection', '慢保护');
-        i18n.set('To update your Production Deployment, push to the', '要更新您的生产部署，请推送到');
-        i18n.set('branch.', '分支。');
-        i18n.set('Track visitors and page views', '跟踪访问者和页面浏览量');
-        i18n.set('Edge Requests', '边缘请求');
-        i18n.set('Function Invocations', '函数调用');
-        i18n.set('错误 Rate', '错误率');
-        i18n.set('Error Rate', '错误率');
-        i18n.set('requests','请求');
-        i18n.set('denied', '被拒绝');
-        i18n.set('challenged', '被质询');
-        i18n.set('Firewall', '防火墙');
-        i18n.set('Active Branches', '活跃分支');
-        i18n.set('No Preview Deployments', '没有预览部署');
-        i18n.set('No 预览部署', '没有预览部署');
-        i18n.set('Commit using our Git connections.', '使用我们的Git连接提交。');
-        i18n.set('All systems normal', '所有系统正常');
-        i18n.set('Instant Rollback', '即时回滚');
-        i18n.set('Observability', '可观测性');
-        i18n.set('Storage', '存储');
-        i18n.set('hours', '小时');
-        i18n.set('minutes', '分钟');
-        i18n.set('seconds', '秒');
-        i18n.set('days', '天');
-        i18n.set('weeks', '周');
-        i18n.set('months', '月');
-        i18n.set('years', '年');
-        i18n.set('排序 由 activity', '按活动排序');
-        i18n.set('排序 由 name', '按名称排序');
-        i18n.set('搜索 Repositories and 项目...', '搜索存储库和项目...');
-        i18n.set('Find Team...', '搜索团队...');
-        i18n.set('Find Project...', '搜索项目...');
-        i18n.set('Recent Previews', '近期预览');
-        i18n.set('What do you need?', '您需要什么？');
-        i18n.set('Upgrade to 专业版', '升级到专业版');
-        i18n.set('Theme', '主题');
-        i18n.set('Command Menu', '命令菜单');
-        i18n.set('首页 Page', '主页');
-        i18n.set('创建 new 团队', '创建新团队');
-        i18n.set('Change Theme...', '更改主题...');
-        i18n.set('复制 Current URL', '复制当前URL');
-        i18n.set('Navigation', '导航');
-        i18n.set('Go to', '前往');
-        i18n.set('Quick 复制', '快速复制');
-        i18n.set('Scope 设置...', '范围设置...');
-        i18n.set('Switch Scope...', '切换范围...');
-        i18n.set('搜索 文档...', '搜索文档...');
-        i18n.set('联系我们 支持', '联系支持');
-        i18n.set('Send 反馈...', '发送反馈...');
-        i18n.set('Developer Tools', '开发者工具');
-        i18n.set('搜索 开发者工具', '搜索开发者工具');
-
-
-        // 精确匹配长句
-        i18n.set('Firewall is active', '防火墙已激活');
-        i18n.set('Track visitors and page views', '跟踪访问者和页面浏览量');
-        i18n.set('应用', '应用');
-        
-        // 更多导航和项目设置
-        i18n.set('Repository', '代码仓库');
-        i18n.set('Usage', '使用量');
-        i18n.set('Visit', '访问');
-        i18n.set('Hobby', '业余版');
-        i18n.set('deployment', '部署');
-        
-        // 补充一些特定于页面的术语
-        i18n.set('ago', '前');
-        i18n.set('by', '由');
-        i18n.set('Ready', '就绪');
-        i18n.set('Home', '首页');
-        i18n.set('Contact', '联系我们');
-        i18n.set('Legal', '法律条款');
-        i18n.set('Guides', '指南');
-        i18n.set('hidden files', '隐藏文件');
-
-        // 补充截图中未翻译的内容
-        i18n.set('Visit with Toolbar', '使用工具栏访问');
-        i18n.set('Scan this QR code to open with the toolbar on a different device:', '扫描此二维码在其他设备上使用工具栏打开：');
-        i18n.set('Get easy access to the toolbar on your production deployments:', '在您的生产部署中轻松访问工具栏：');
-        i18n.set('Install Extension', '安装扩展');
-        i18n.set('Get detailed performance metrics', '获取详细性能指标');
-        i18n.set('enabling Speed Insights', '启用速度洞察');
-        i18n.set('Function CPU', '函数CPU');
-        i18n.set('Basic', '基础版');
-        i18n.set('vCPU', '虚拟CPU');
-        i18n.set('GB Memory', 'GB内存');
-        i18n.set('Standard Protection', '标准保护');
-        i18n.set('Skew Protection', '偏差保护');
-        i18n.set('Disabled', '已禁用');
-        i18n.set('Enable', '启用');
-        i18n.set('Repository', '代码仓库');
-        i18n.set('更新日志', '更新日志');
-        i18n.set('帮助', '帮助');
-        i18n.set('Docs', '文档');
-        i18n.set('Store', '存储');
-        i18n.set('Domain', '域名');
-
-        // 添加新词条后更新排序列表
-        updateSortedKeys();
-    }
-    
     // 全面翻译方法
     function forceApplyAllTranslations() {
-        // 先对所有文本节点进行翻译
         replaceText(document.body);
-        
-        // 然后针对特定元素进行专项翻译
         handleSpecialElements();
         
-        // 查找并处理所有按钮元素
         document.querySelectorAll('button, a.button, [role="button"]').forEach(btn => {
             if (!shouldIgnoreNode(btn)) {
                 Array.from(btn.childNodes).forEach(node => {
-                    if (node.nodeType === 3) { // 文本节点
+                    if (node.nodeType === 3) {
                         translateTextNode(node);
                     }
                 });
             }
         });
         
-        // 处理所有的页面导航和标题元素
         document.querySelectorAll('nav, header, h1, h2, h3, .title, .header, .navigation').forEach(el => {
             if (!shouldIgnoreNode(el)) {
                 Array.from(el.childNodes).forEach(node => {
-                    if (node.nodeType === 3) { // 文本节点
+                    if (node.nodeType === 3) {
                         translateTextNode(node);
                     }
                 });
             }
         });
         
-        // 处理特定的问题元素
         const problemElements = [
             'Visit with Toolbar',
             'Scan this QR code',
@@ -822,7 +762,6 @@
             'using our Git connections'
         ];
         
-        // 遍历所有文本节点查找特定问题词组
         const walker = document.createTreeWalker(
             document.body,
             NodeFilter.SHOW_TEXT,
@@ -856,14 +795,12 @@
             }
         }
         
-        // 处理常见的复数形式问题（英文加s的情况）
         document.querySelectorAll('*').forEach(el => {
             if (el.childNodes && el.childNodes.length && !shouldIgnoreNode(el)) {
                 Array.from(el.childNodes).forEach(node => {
                     if (node.nodeType === 3 && node.nodeValue && node.nodeValue.trim()) {
                         let text = node.nodeValue;
                         
-                        // 处理常见英文复数形式
                         const pluralWords = ['Domains', 'Deployments', 'Branches', 'Requests', 'Logs'];
                         pluralWords.forEach(word => {
                             const singular = word.substring(0, word.length - 1);
@@ -872,7 +809,6 @@
                             }
                         });
                         
-                        // 处理结尾有s的中文翻译
                         if (text.match(/[\u4e00-\u9fa5]+s\b/)) {
                             text = text.replace(/(\p{Script=Han}+)s\b/gu, '$1');
                         }
@@ -886,15 +822,13 @@
         });
     }
     
-    // 处理变异（MutationObserver的回调）
+    // 处理变异
     function processMutations(mutations) {
-        // 使用防抖动技术
         clearTimeout(fullTranslationTimer);
         fullTranslationTimer = setTimeout(() => {
             let shouldFullTranslate = false;
             
             mutations.forEach(mutation => {
-                // 检查是否有重要元素变化
                 if (mutation.addedNodes.length > 0) {
                     for (let i = 0; i < mutation.addedNodes.length; i++) {
                         const node = mutation.addedNodes[i];
@@ -909,7 +843,6 @@
                     }
                 }
                 
-                // 处理字符变更
                 if (mutation.type === 'characterData') {
                     if (mutation.target && mutation.target.nodeValue && mutation.target.nodeValue.trim() && 
                         !shouldIgnoreNode(mutation.target.parentNode)) {
@@ -918,24 +851,20 @@
                 }
             });
             
-            // 如果有重要元素变化，执行完整翻译
             if (shouldFullTranslate) {
                 forceApplyAllTranslations();
             } else {
-                // 否则仅处理新增节点和变化
                 mutations.forEach(mutation => {
-                    // 处理新增节点
                     mutation.addedNodes.forEach(addedNode => {
-                        if (addedNode.nodeType === 1) { // 元素节点
+                        if (addedNode.nodeType === 1) {
                             replaceText(addedNode);
-                        } else if (addedNode.nodeType === 3) { // 文本节点
+                        } else if (addedNode.nodeType === 3) {
                             if (addedNode.nodeValue && addedNode.nodeValue.trim()) {
                                 translateTextNode(addedNode);
                             }
                         }
                     });
                     
-                    // 处理属性变化
                     if (mutation.type === 'attributes') {
                         const target = mutation.target;
                         if (target && !shouldIgnoreNode(target)) {
@@ -949,19 +878,16 @@
         }, 100);
     }
 
-    // 处理特殊元素，如按钮、标题等
+    // 处理特殊元素
     function handleSpecialElements() {
-        // 处理页面顶部导航按钮
         document.querySelectorAll('header button, header a, nav button, nav a').forEach(el => {
             if (el.textContent && el.textContent.trim() && !shouldIgnoreNode(el)) {
                 translateTextNode(el.firstChild);
             }
         });
         
-        // 处理页面上的按钮
         document.querySelectorAll('button, .geist-button').forEach(btn => {
             if (!shouldIgnoreNode(btn) && btn.textContent && btn.textContent.trim()) {
-                // 如果按钮包含多个子元素，尝试分别翻译
                 if (btn.childNodes.length > 1) {
                     btn.childNodes.forEach(node => {
                         if (node.nodeType === 3 && node.nodeValue && node.nodeValue.trim()) {
@@ -974,10 +900,8 @@
             }
         });
         
-        // 处理标题和特定UI元素
         document.querySelectorAll('h1, h2, h3, h4, h5, h6, .card-title, .panel-title, .section-title').forEach(el => {
             if (!shouldIgnoreNode(el) && el.textContent && el.textContent.trim()) {
-                // 标题可能包含多个文本节点和子元素，分别处理
                 el.childNodes.forEach(node => {
                     if (node.nodeType === 3 && node.nodeValue && node.nodeValue.trim()) {
                         translateTextNode(node);
@@ -986,12 +910,10 @@
             }
         });
         
-        // 处理特定的数字单位，如"1K requests"等
         document.querySelectorAll('span, div, p').forEach(el => {
             if (!shouldIgnoreNode(el) && el.textContent && /\d+K\s+\w+/.test(el.textContent)) {
                 el.childNodes.forEach(node => {
                     if (node.nodeType === 3 && node.nodeValue && /\d+K\s+\w+/.test(node.nodeValue)) {
-                        // 特殊处理带有数字单位的文本
                         let text = node.nodeValue;
                         text = text.replace(/(\d+)K\s+(requests\s+\w+)/gi, function(match, num, type) {
                             const translatedType = i18n.has(type) ? i18n.get(type) : type;
@@ -1006,12 +928,10 @@
     
     // 设置特殊元素的观察器
     function setupSpecialObservers() {
-        // 观察页面上的主要容器区域，某些区域可能使用了AJAX加载
         const mainContainers = document.querySelectorAll('main, [role="main"], .main-content, .dashboard, .project-view');
         
         mainContainers.forEach(container => {
             const containerObserver = new MutationObserver(() => {
-                // 使用防抖动技术，减少重复翻译次数
                 clearTimeout(specialTranslationTimer);
                 specialTranslationTimer = setTimeout(() => {
                     handleSpecialElements();
@@ -1025,9 +945,7 @@
             specialObservers.push(containerObserver);
         });
         
-        // 专门监听对话框和弹出窗口
         document.addEventListener('click', function() {
-            // 点击后延迟处理，因为可能会触发对话框或弹出菜单
             setTimeout(() => {
                 document.querySelectorAll('dialog, [role="dialog"], .modal, .dropdown-menu, .popover, .tooltip').forEach(dialog => {
                     if (dialog.style.display !== 'none' && dialog.textContent.trim()) {
@@ -1038,18 +956,17 @@
         }, false);
     }
     
-    // 在页面加载完成后执行一次全面翻译并启动特殊观察器
+    // 页面加载完成后执行
     window.addEventListener('load', function() {
         setTimeout(() => {
             forceApplyAllTranslations();
-            setupSpecialObservers(); // 启动特殊观察器
+            setupSpecialObservers();
         }, 1000);
     });
     
-    // 对页面中的某些特定元素添加点击事件，进行额外翻译
+    // 点击事件额外翻译
     document.addEventListener('click', function(e) {
         setTimeout(() => {
-            // 检查是否点击了可能触发内容变化的元素
             if (e.target && (
                 e.target.tagName === 'BUTTON' || 
                 e.target.tagName === 'A' || 
