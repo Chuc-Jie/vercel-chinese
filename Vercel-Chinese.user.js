@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Vercel 汉化
-// @namespace    https://github.com/liyixin21/vercel-chinese
+// @namespace    https://github.com/Chuc-Jie/vercel-chinese
 // @version      0.2.2
 // @description  汉化 Vercel 界面
 // @author       友野YouyEr（原作者：liyixin21）
@@ -180,6 +180,81 @@
         ['Edit', '编辑'],
         ['Delete', '删除'],
         ['Manage', '管理'],
+        // 2026-03-22 新增
+        ['All projects', '所有项目'],
+        ['Alerts', '警报'],
+        ['AI Gateway', '人工智能门户'],
+        ['Sandboxes', '沙盒'],
+        ['Agent', '代理'],
+        ['Tasks', '任务'],
+        ['Product', '产品'],
+        ['Usage', '使用'],
+        ['Networking', '网络'],
+        ['Fast Data Transfer', '快速数据传输'],
+        ['Regions', '区域'],
+        ['Direction', '地区'],
+        ['Microfrontends Routing', '微前端路由'],
+        ['Continue to Logs', '继续查看日志'],
+        ['Choose a project to continue', '选择一个项目以继续'],
+        ['Find Project…', '查找项目…'],
+        ['Team Name', '团队名称'],
+        ['Team URL', '团队链接'],
+        ['Team Avatar', '团队头像'],
+        ['Vercel Toolbar', 'Vercel 工具栏'],
+        ['Data Preferences', '数据偏好'],
+        ['Build and Deployment', '构建与部署'],
+        ['On-Demand Concurrent Builds', '按需并发构建'],
+        ['Search Projects', '搜索项目'],
+        ['Build Machines', '构建机器'],
+        ['Remote Caching', '远程缓存'],
+        ['Remote caching is enabled.', '远程缓存已开启。'],
+        ['Remote caching allows you to share a single cache across multiple machines.', '远程缓存允许您在多台机器之间共享单个缓存。'],
+        ['build queue', '构建队列'],
+        ['build deployments', '构建部署'],
+        ['Run all builds immediately', '立即运行所有构建'],
+        ['or learn more about', ' 或 详细了解'],
+        ['Learn more about', '详细理解'],
+        ['Skip', '跳过'],
+        ['Immediate', '立即'],
+        ['Per branch', '每个分支'],
+        ['Access Groups', '权限组'],
+        ['Create and manage Access Groups.', '创建和管理权限组。'],
+        ['Learn more', '了解更多'],
+        ['Upgrade to Enterprise', '升级至企业版'],
+        ['Create access groups to more easily manage project roles.', '创建访问组以更轻松地管理项目角色。'],
+        ['Contact Sales', '联系销售'],
+        ['Drains', '日志转发'],
+        ['Forward Logs, Traces, Speed Insights, and Analytics to third-party providers or your own custom endpoints.', '将日志、追踪、速度洞察和分析数据转发至第三方提供商或您自己的自定义端点。'],
+        ['Get started with Drains', '开始使用日志转发'],
+        ['Upgrade to Pro to create your first Drain.', '升级至专业版以创建您的第一个日志转发。'],
+        ['Learn More', '了解更多'],
+        ['Webhooks', 'Webhook'],
+        ['Add Webhooks', '添加 Webhook'],
+        ['This feature is available on the Pro plan.', '此功能在专业版计划中可用。'],
+        ['Privacy', '隐私'],
+        ['Two-Factor Authentication Enforcement', '双因素认证强制要求'],
+        ['Require two-factor authentication (2FA) for members of your team. Team members who do not have 2FA will not be able access your team, but will remain a member. Visit the team members page to view the 2FA status of each member.', '要求团队成员启用双因素认证（2FA）。未启用2FA的团队成员将无法访问您的团队，但仍会保留成员身份。请访问团队成员页面查看每位成员的2FA状态。'],
+        ['To prevent workflow disruptions, configure two-factor authentication on all user-managed accounts prior to enforcement. Any CI/CD pipeline tokens associated with users who do not have two-factor authentication enabled will cease to work.', '为避免工作流中断，请在强制执行前为所有用户管理的账户配置双因素认证。任何与未启用双因素认证的用户关联的 CI/CD 流水线令牌将停止工作。'],
+        ['Learn more about', '了解更多关于'],
+        ['Two-Factor Authentication enforcement', '双因素认证强制要求'],
+        ['IP Address Visibility', 'IP 地址可见性'],
+        ['IP addresses are currently visible in the Vercel Dashboard.', 'IP 地址目前在 Vercel 控制台中可见。'],
+        ['IP addresses are currently visible in your Log Drains.', 'IP 地址目前在您的日志转发中可见。'],
+        ['Microfrontends', '微前端'],
+        ['Connectivity', '连接性'],
+        ['My Notifications', '我的通知'],
+        ['All types', '所有类型'],
+        ['Boolean', '布尔值'],
+        ['String', '字符串'],
+        ['Number', '数字'],
+        ['Search flags...', '搜索功能标志...'],
+        ['Flags', '功能标志'],
+        ['No flags found', '未找到功能标志'],
+        ['Create flags at the project level to manage feature releases. Learn more', '在项目级别创建功能标志以管理功能发布。了解更多'],
+        ['Marketplace Providers', '市场提供商'],
+        ['Create feature flags and experiments', '创建功能标志和实验'],
+        ['Set up a provider to start creating feature flags and experiments.', '设置提供商以开始创建功能标志和实验。'],
+        ['Create', '创建'],
     ]);
 
     // ---------- 新增：排序键列表，实现长短语优先 ----------
@@ -394,83 +469,6 @@
 
     // 添加更多词汇的函数
     function addVocabulary() {
-        // 2026-03-22 新增
-        i18n.set('All projects', '所有项目');
-        i18n.set('Alerts', '警报');
-        i18n.set('AI Gateway', '人工智能门户');
-        i18n.set('Sandboxes', '沙盒');
-        i18n.set('Agent', '代理');
-        i18n.set('Tasks', '任务');
-        i18n.set('Product', '产品');
-        i18n.set('Usage', '使用');
-        i18n.set('Networking', '网络');
-        i18n.set('Fast Data Transfer', '快速数据传输');
-        i18n.set('Regions', '区域');
-        i18n.set('Direction', '地区');
-        i18n.set('Microfrontends Routing', '微前端路由');
-        i18n.set('Continue to Logs', '继续查看日志');
-        i18n.set('Choose a project to continue', '选择一个项目以继续');
-        i18n.set('Find Project…', '查找项目…');
-        i18n.set('Team Name', '团队名称')
-        i18n.set('Team URL', '团队链接')
-        i18n.set('Team Avatar', '团队头像')
-        i18n.set('Vercel Toolbar', 'Vercel 工具栏')
-        i18n.set('Data Preferences', '数据偏好')
-        i18n.set('Build and Deployment', '构建与部署')
-        i18n.set('On-Demand Concurrent Builds', '按需并发构建')
-        i18n.set('Search Projects', '搜索项目')
-        i18n.set('Build Machines', '构建机器')
-        i18n.set('Remote Caching', '远程缓存')
-        i18n.set('Remote caching is enabled.', '远程缓存已开启。')
-        i18n.set('Remote caching allows you to share a single cache across multiple machines.', '远程缓存允许您在多台机器之间共享单个缓存。')
-        i18n.set('build queue', '构建队列')
-        i18n.set('build deployments', '构建部署')
-        i18n.set('Run all builds immediately', '立即运行所有构建')
-        i18n.set('All projects', '所有项目')
-        i18n.set('or learn more about', ' 或 详细了解')
-        i18n.set('Learn more about', '详细理解')
-        i18n.set('Skip', '跳过')
-        i18n.set('Immediate', '立即')
-        i18n.set('Per branch', '每个分支')
-        i18n.set('Access Groups', '权限组')
-        i18n.set('Create and manage Access Groups.', '创建和管理权限组。')
-        i18n.set('Learn more', '了解更多')
-        i18n.set('Upgrade to Enterprise', '升级至企业版')
-        i18n.set('Create access groups to more easily manage project roles.', '创建访问组以更轻松地管理项目角色。')
-        i18n.set('Contact Sales', '联系销售')
-        i18n.set('Drains', '日志转发')
-        i18n.set('Forward Logs, Traces, Speed Insights, and Analytics to third-party providers or your own custom endpoints.', '将日志、追踪、速度洞察和分析数据转发至第三方提供商或您自己的自定义端点。')
-        i18n.set('Get started with Drains', '开始使用日志转发')
-        i18n.set('Upgrade to Pro to create your first Drain.', '升级至专业版以创建您的第一个日志转发。')
-        i18n.set('Learn More', '了解更多')
-        i18n.set('Webhooks', 'Webhook')
-        i18n.set('Add Webhooks', '添加 Webhook')
-        i18n.set('This feature is available on the Pro plan.', '此功能在专业版计划中可用。')
-        i18n.set('Privacy', '隐私')
-        i18n.set('Two-Factor Authentication Enforcement', '双因素认证强制要求')
-        i18n.set('Require two-factor authentication (2FA) for members of your team. Team members who do not have 2FA will not be able access your team, but will remain a member. Visit the team members page to view the 2FA status of each member.', '要求团队成员启用双因素认证（2FA）。未启用2FA的团队成员将无法访问您的团队，但仍会保留成员身份。请访问团队成员页面查看每位成员的2FA状态。')
-        i18n.set('To prevent workflow disruptions, configure two-factor authentication on all user-managed accounts prior to enforcement. Any CI/CD pipeline tokens associated with users who do not have two-factor authentication enabled will cease to work.', '为避免工作流中断，请在强制执行前为所有用户管理的账户配置双因素认证。任何与未启用双因素认证的用户关联的 CI/CD 流水线令牌将停止工作。')
-        i18n.set('Learn more about', '了解更多关于')
-        i18n.set('Two-Factor Authentication enforcement', '双因素认证强制要求')
-        i18n.set('IP Address Visibility', 'IP 地址可见性')
-        i18n.set('IP addresses are currently visible in the Vercel Dashboard.', 'IP 地址目前在 Vercel 控制台中可见。')
-        i18n.set('IP addresses are currently visible in your Log Drains.', 'IP 地址目前在您的日志转发中可见。')
-        i18n.set('Microfrontends', '微前端')
-        i18n.set('Connectivity', '连接性')
-        i18n.set('My Notifications', '我的通知')
-        i18n.set('All types', '所有类型')
-        i18n.set('Boolean', '布尔值')
-        i18n.set('String', '字符串')
-        i18n.set('Number', '数字')
-        i18n.set('Search flags...', '搜索功能标志...')
-        i18n.set('Flags', '功能标志')
-        i18n.set('No flags found', '未找到功能标志')
-        i18n.set('Create flags at the project level to manage feature releases. Learn more', '在项目级别创建功能标志以管理功能发布。了解更多')
-        i18n.set('Marketplace Providers', '市场提供商')
-        i18n.set('Create feature flags and experiments', '创建功能标志和实验')
-        i18n.set('Set up a provider to start creating feature flags and experiments.', '设置提供商以开始创建功能标志和实验。')
-        i18n.set('Create', '创建')
-
         // 项目和仪表盘
         i18n.set('Projects', '项目');
         i18n.set('Project', '项目');
